@@ -14,3 +14,18 @@ nano .env
 # Create alias
 echo "alias cloudtools='$(pwd)/venv/bin/python $(pwd)/main.py'" >> ~/.bash_aliases
 ```
+
+## Usage
+```bash
+# List all ec2 instances
+cloudtools ec2
+
+# List all rds instances
+cloudtools rds
+
+# Lit all ec2 instances using different profile
+cloudtools ec2 --profile {profile}
+```
+
+## Todos
+- [ ] Allow to set the resources region
